@@ -1,1 +1,0 @@
-# namwkim.github.io
