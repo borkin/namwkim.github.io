@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>MASSVIS - Massachusetts (Massive) Visualization Dataset
+</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -62,7 +63,7 @@
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#datasets">Datasets</a>
+                        <a class="page-scroll" href="#data">Datasets</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -80,7 +81,7 @@
                 <h1>{{ title }} </h1>
                 <hr>
                 <p>{{ subtitle }}</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a> -->
             </div>
         </div>
     </header>
@@ -108,155 +109,92 @@
             </div>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
+            <div class="row" ng-repeat="paper in papers">
+                <div class="col-md-12 text-center">                    
+                        <!-- <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i> -->
+                        <div >
+	                        <h3><i class="fa fa-bookmark-o"></i> {{paper.title}}</h3>
+	                        <p class="text-muted">
+	                        	{{paper.authors}}<br>
+	                        	{{paper.source}}<br>	                        	
+	                    	</p>
+	                    	<div>
+	                    		<i class="fa fa-file-pdf-o fa-lg"></i><a href="{{paper.link}}"> Paper</a>
+	                    		<i class="fa fa-file-pdf-o fa-lg"></i><a href="{{paper.supplement}}"> Supplement</a>
+	                    		<i class="fa fa-film fa-lg"></i><a href="{{paper.video}}"> Video</a>
+	                    		<i class="fa fa-file-pdf-o fa-lg"></i><a href="{{paper.slides}}"> Slides</a>
+	                    		<i class="fa fa-file-code-o fa-lg"></i><a href="{{paper.bibtex}}"> Bibtex</a>
+	                    	</div>
+                    	</div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
-                </div>
-            </div>                
+            </div>                 
         </div>
     </section>
 
     <section class="no-padding" id="team">
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                <div class="col-lg-4 col-sm-6" ng-repeat="member in members">
+                    <a href="{{member.url}}" class="portfolio-box" target="_blank">
+                        <img ng-src="img/members/{{member.photo}}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
                                 <div class="project-name">
-                                    Project Name
+                                    {{member.name}}
+                                </div>
+                                <div class="project-category text-faded">
+                                    {{member.affiliation}}
                                 </div>
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                </div>               
             </div>
         </div>
     </section>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+    <section id="data" class="bg-dark">
+    	<div class="container text-center">
+    		<div class="row">
+                <div class="col-md-8 col-md-offset-2">
+    			<h2 class="section-heading">{{ datasetTitle }}</h2>
+                <hr class="light">
+
+                <form action="mailto:massviz@mit.edu" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label class="sr-only" for="requestName">Name</label>
+                        <input type="text" class="form-control col-md-4" id="requestName" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="sr-only" for="requestEmail" >Email</label>
+                        <input type="email" class="form-control" id="requestEmail" placeholder="Email">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-xl wow tada"><i class="fa fa-paper-plane fa-lg"></i> Send Request</button>
+                </form>
+                </div>
             </div>
-        </div>
-    </aside>
+		</div>
+	</section>
 
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                <div class="col-md-12 text-center">
+                    <h2 class="section-heading">{{ contactTitle }}</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>{{ contactDesc }}</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-md-12 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:massviz@mit.edu">massviz@mit.edu</a></p>
                 </div>
             </div>
         </div>
     </section>
     <!-- Angularjs -->
-    <script src="/bower_components/angular/angular.min.js"></script>
-    <script src="/js/controller.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/controller.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
