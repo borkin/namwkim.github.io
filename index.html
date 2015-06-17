@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="massvis">
 
 <head>
 
@@ -34,7 +34,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" ng-controller="mainCtrl">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -74,7 +74,7 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Your Favorite Source of Free Bootstrap Themes</h1>
+                <h1>{{ title }} </h1>
                 <hr>
                 <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
@@ -263,7 +263,9 @@
             </div>
         </div>
     </section>
-
+    <!-- Angularjs -->
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="js/controller.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
