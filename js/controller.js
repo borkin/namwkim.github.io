@@ -1,11 +1,6 @@
-var hyecoo = angular.module('massvis')
-	.run(function(){
-		// initialization
+var massvis = angular.module('massvis', []);
 
-	});
-
-
-hyecoo.controller('mainCtrl', ['$scope',  function ($scope) {
-	$scope.title = "MassVis: blah"
+massvis.controller('mainCtrl', ['$scope',  function ($scope) {
+	$scope.title = "MASSVIS:"
 
 }]);
