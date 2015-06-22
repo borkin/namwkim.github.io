@@ -16,8 +16,7 @@ massvis.controller('mainCtrl', ['$scope',  function ($scope) {
   Canada Postgraduate Doctoral Scholarship (NSERC PGS-D). N.K. was supported by the Kwanjeong Educational \
   Foundation. Any opinions, findings, and conclusions or recommendations expressed in this material are those\
    of the author(s) and do not necessarily reflect the views of the National Science Foundation and other \
-   funding agencies. All materials in this website, including images, data, and visualization, can be used \
-   for academic research purpose only."
+   funding agencies."
 	$scope.papers = [
     {
       title: "Beyond Memorability: Visualization Recognition and Recall",
