@@ -48,7 +48,7 @@ massvis.controller('mainCtrl', ['$scope',  function ($scope) {
     	name: "Michelle A. Borkin",
     	url: "http://people.seas.harvard.edu/~borkin/",
     	photo: "michelle.jpg",
-    	affiliation: "Assistant Professor, Northeastern CS"
+    	affiliation: "Assistant Professor, Northeastern CCIS"
     },
     {
     	name: "Zoya Bylinskii",
@@ -57,32 +57,32 @@ massvis.controller('mainCtrl', ['$scope',  function ($scope) {
     	affiliation: "PhD Candidate, MIT EECS"
     },
     {
-    	name: "Nam Wook Kim",
-    	url: "http://namwkim.org",
-    	photo: "nam.png",
-    	affiliation: "PhD Student, Harvard SEAS"
-    },
-    {
       name: "Krzysztof Z. Gajos",
       url: "http://www.eecs.harvard.edu/~kgajos/",
       photo: "gajos.jpg",
       affiliation: "Assosiate Professor, Harvard SEAS"
     },
     {
-      name: "Hanspeter Pfister",
-      url: "http://vcg.seas.harvard.edu/people/hanspeter-pfister",
-      photo: "hp.jpg",
-      affiliation: "Professor, Harvard SEAS"
+      name: "Nam Wook Kim",
+      url: "http://namwkim.org",
+      photo: "nam.png",
+      affiliation: "PhD Student, Harvard SEAS"
     },
     {
       name: "Aude Oliva",
       url: "http://cvcl.mit.edu/audeoliva.html",
       photo: "aude.png",
       affiliation: "Principal Research Scientist, MIT EECS"
+    },
+    {
+      name: "Hanspeter Pfister",
+      url: "http://vcg.seas.harvard.edu/people/hanspeter-pfister",
+      photo: "hp.jpg",
+      affiliation: "Professor, Harvard SEAS"
     }
 
     ];
     $scope.datasetTitle = "Dataset Request"
     $scope.contactTitle = "Let's Get In Touch!";
-    $scope.contactDesc = "Ready to start your next project with us? That's great! Send us an email and we will get back to you as soon as possible!"
+    $scope.contactDesc = "Questions? Comments?"
 }]);
