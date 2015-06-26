@@ -20,7 +20,7 @@ massvis.controller('mainCtrl', ['$scope',  function ($scope) {
 	$scope.papers = [
     {
       title: "Beyond Memorability: Visualization Recognition and Recall",
-      authors: "Borkin, M.,  Bylinskii, Z., Bainbridge C.M., Yeh, C.S., Borkin, D., Pfister, H., & Oliva, A.",
+      authors: "Borkin, M.,  Bylinskii, Z., Kim, N.W., Bainbridge C.M., Yeh, C.S., Borkin, D., Pfister, H., & Oliva, A.",
       source: "IEEE Transactions on Visualization and Computer Graphics (Proceedings of InfoVis 2015) - Conditionally Accepted"
     },
     {
@@ -28,7 +28,7 @@ massvis.controller('mainCtrl', ['$scope',  function ($scope) {
       link: "http://namwkim.org/files/CHI2015-WIP-Bubble.pdf",
       slides:"http://namwkim.org/files/CHI2015-WIP-Bubble-Poster.pdf",
       bibtex: "http://vcg.seas.harvard.edu/publications/export/bibtex/371751",
-      authors: "Kim, N.W., Bylinskii, Z., Borkin, M., Gajos, K.Z., Oliva, A., & Pfister, H.",
+      authors: "Kim, N.W., Bylinskii, Z., Borkin, M., Oliva, A., Gajos, K.Z., & Pfister, H.",
       site: "https://study.namwkim.org/bubble/admin",
       source: "Proceedings of the ACM Conference Extended Abstracts on Human Factors in Computing Systems (CHI EA '15)"
     },
@@ -63,18 +63,6 @@ massvis.controller('mainCtrl', ['$scope',  function ($scope) {
     	affiliation: "PhD Student, Harvard SEAS"
     },
     {
-      name: "Constance May Bainbridge",
-      url: "http://www.meiohara.com/",
-      photo: "connie.jpg",
-      affiliation: "Research Assistant, MIT EECS"
-    },
-    {
-      name: "Phillip Isola",
-      url: "http://web.mit.edu/phillipi/",
-      photo: "philip.jpg",
-      affiliation: "PhD Student, MIT Brain & Cog.Sci"
-    },
-    {
       name: "Krzysztof Z. Gajos",
       url: "http://www.eecs.harvard.edu/~kgajos/",
       photo: "gajos.jpg",
@@ -91,22 +79,6 @@ massvis.controller('mainCtrl', ['$scope',  function ($scope) {
       url: "http://cvcl.mit.edu/audeoliva.html",
       photo: "aude.png",
       affiliation: "Principal Research Scientist, MIT EECS"
-    },
-    {
-      name: "Shashank Sunkavalli",
-      photo: "default.png"
-    },
-    {
-      name: "Azalea A. Vo",
-      photo: "default.png"
-    },
-    {
-      name: "Chelsea S. Yeh",
-      photo: "default.png"
-    },
-    {
-      name: "Daniel Borkin",
-      photo: "default.png"
     }
 
     ];
